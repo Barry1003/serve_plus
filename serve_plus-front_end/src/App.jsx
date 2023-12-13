@@ -1,13 +1,15 @@
-import './App.css'
-import  {Routes, Route} from 'react-routesRouter-dom'
-import Hero from './components/Hero/Hero';
-import { Routes, Route } from 'react-router-dom';
-function App() { 
-
+ import './App.css'
+import {Routes, Route} from 'react-router-dom'
+function App() {
+ 
   return (
-    <>
+    <> 
       <Routes>
-         <Route exact path="/" element={<Hero/>} /> 
+        <Route path="/" element={<Home />} />
+        <Route path="/Explore" element={<Explore />} />
+        <Route path="/Chat" element={<Chat />} />
+        <Route path="/Auction" element={<Auction />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </>
   )
